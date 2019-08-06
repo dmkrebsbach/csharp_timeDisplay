@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    	<title>Time Display</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h1>My Sick ASP.NET Mvc Clock!</h1>
+          @{ DateTime CurrentTime = DateTime.Now; }  
+        <div>
+            <p>The current time and date:</p> 
+        </div>
+        <div> 
+            <p>Date: @CurrentTime.ToString("MMM d, yyy") </p>
+            <p>Time: @CurrentTime.ToString("h:mm tt") </p>
+        </div>
+    </body>
+</html>
